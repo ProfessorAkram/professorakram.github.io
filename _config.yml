@@ -51,19 +51,28 @@ defaults:
       type: pages
     values:
       layout: single
-      author_profile: false
+      header:
+        overlay_color: "#333"
+        overlay_image: "/assets/images/professor-akram-logo.png"
+      author_profile: false # No sidebar on pages
       classes: wide
   - scope:
       path: ""
       type: posts
     values:
       layout: single
+      header:
+        overlay_color: "#333"
+        overlay_image: "/assets/images/professor-akram-logo.png"
       author_profile: true # Sidebars stay for the journal
   - scope:
       path: ""
       type: portfolio
     values:
       layout: single
+      header:
+        overlay_color: "#333"
+        overlay_image: "/assets/images/professor-akram-logo.png"
       author_profile: true # Sidebars stay for the artifacts      
       
 include:

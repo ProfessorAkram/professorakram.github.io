@@ -3,9 +3,6 @@ layout: splash
 permalink: /
 header:
   overlay_image: /assets/images/professor-akram-logo.png
-  caption: "" # Moves inside header to suppress text
-  actions:    # Moves inside header to suppress buttons/titles
-    - label: ""
 
 
 feature_row:
