@@ -22,7 +22,7 @@ url: "https://professorakram.github.io"
 
 markdown: kramdown
 remote_theme: "mmistakes/minimal-mistakes"
-include: ["_pages"] # This tells Jekyll to look inside your _pages folder
+include: ["_pages"]
 
 plugins:
   - jekyll-feed
@@ -34,14 +34,14 @@ plugins:
 # 🎨 Theme Settings
 # -----------------------------------------------------------------------------
 
-minimal_mistakes_skin: "default" # You can choose: aqua, air, contrast, dirt, dark, midnight, mint, neon, sunrise
+minimal_mistakes_skin: "default"
 site_author: "Professor Akram"
 paginate: 5
 words_per_minute: 200
 
 # Masthead (Top Navigation) Settings
-logo: "/assets/images/professor-akram-logo.png" # Path to your logo file
-title: "Professor Akram"                      # Text that appears next to the logo 
+logo: "/assets/images/professor-akram-logo.png"
+masthead_title: "Professor Akram"
 
 # Defaults for Posts and Pages
 defaults:
@@ -59,13 +59,22 @@ defaults:
       author_profile: true
 
 # -----------------------------------------------------------------------------
+# 📂 Collections Settings 
+# -----------------------------------------------------------------------------
+
+collections:
+  portfolio:
+    output: true
+    permalink: /portfolio/:path/
+
+# -----------------------------------------------------------------------------
 # 👤 Author Settings
 # -----------------------------------------------------------------------------
 
 author:
   name   : "Akram Taghavi-Burris"
   avatar : "/assets/images/2024-Akram.png"
-  bio    : "A Master of Systemic Sorcery: I teach the art of weaving chaotic imagination into stable, real-time systems. Controlling the entropy of virtual worlds through the ancient ritual of Programming and Modular Design.""
+  bio    : "A Master of Systemic Sorcery: I teach the art of weaving chaotic imagination into stable, real-time systems. Controlling the entropy of virtual worlds through the ancient ritual of Programming and Modular Design."
   links:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
