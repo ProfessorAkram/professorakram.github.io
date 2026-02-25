@@ -4,9 +4,9 @@ permalink: /
 header:
   overlay_color: "#333"
   overlay_image: /assets/images/professor-akram-logo.png
-actions: # Hide title over header
-    - label: "" 
-  caption: "" # Hide caption over heaeder
+  caption: "" # Moves inside header to suppress text
+  actions:    # Moves inside header to suppress buttons/titles
+    - label: ""
 
 
 feature_row:

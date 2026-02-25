@@ -54,7 +54,22 @@ h3 {
 }
 
 
+// 1. Set the default dark background for all banners
+.page__hero--overlay {
+  background-color: #333 !important; 
+}
 
+// 2. Hide the auto-generated text on banners globally
+// (This saves you from adding 'caption: ""' to every file)
+.page__hero-title, 
+.page__hero-excerpt {
+  display: none !important;
+}
+
+// 3. Ensure the content area stays wide and clean
+.archive, .inner {
+  max-width: 1280px !important;
+}
 
 // --- SIDEBAR STYLES ---
 
