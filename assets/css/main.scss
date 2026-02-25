@@ -3,12 +3,23 @@
 ---
 
 // 1. Import your specific Google Fonts
-@import url('https://fonts.googleapis.com/css2?family=Emilys+Candy&family=Laila:wght@400;700&family=Sofia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gorditas&family=Laila:wght@400;700&family=Sofia&display=swap');
 
 // 2. Import theme basics
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
 @import "minimal-mistakes";
 
+
+// --- THEME VARIABLES ---
+:root {
+  --mint-light: #9aeca4;
+  --mint-medium: #74b37b;
+  --mint-dark: #63996a;
+  --yellow-light: #fcf4c7;
+  --magic-yellow: #FDDD20;
+  --text-gray: #454545;
+  --border-gray: #b2b2b2;
+}
 
 // --- GENERAL STYLES ---
 
@@ -17,7 +28,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6, .archive__item-title, .page__title {
-  font-family: "Emilys Candy", serif;
+  font-family: 'Gorditas', cursive;
   font-weight: 400; 
 }
 
@@ -110,4 +121,41 @@ h3 {
 .layout--single .page__content {
   width: 100% !important;
   max-width: none !important;
+}
+
+
+.masthead {
+  background-color: var(--mint-light) !important;
+  background-image: radial-gradient(white 15%, transparent 16%), 
+                    radial-gradient(white 15%, transparent 16%) !important;
+  background-size: 60px 60px !important;
+  background-position: 0 0, 30px 30px !important;
+  border-bottom: 3px solid var(--mint-medium) !important;
+}
+
+.masthead__menu-item a {
+  color: var(--text-gray) !important;
+  font-family: 'Laila', serif;
+  font-weight: bold;
+}
+
+blockquote {
+  font-family: 'Sofia', cursive !important;
+  font-size: 1.4em;
+  background: var(--yellow-light);
+  border: 2px solid rgba(116, 179, 123, 0.2);
+  border-radius: 15px;
+  padding: 1.5rem 2rem;
+  position: relative;
+  color: var(--mint-dark);
+
+  &::before {
+    content: "\201C";
+    font-family: Georgia, serif;
+    font-size: 4em;
+    position: absolute;
+    left: 10px;
+    top: -10px;
+    color: rgba(116, 179, 123, 0.2);
+  }
 }
