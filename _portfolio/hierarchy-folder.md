@@ -11,8 +11,8 @@ tags:
   - Tools
   - Workflow
 header:
-  teaser: /assets/images/portfolio/hierarchy-thumb.png
-  overlay_image: /assets/images/portfolio/hierarchy-banner.jpg # Optional header image
+  teaser: /assets/images/portfolio/unity-hierarchyFolder-hierarchy.png
+  overlay_image: /assets/images/portfolio/unity-hierarchyFolder-hierarchy.png
   overlay_filter: 0.5
 
 sidebar:
