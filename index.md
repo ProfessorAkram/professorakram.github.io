@@ -11,8 +11,7 @@ header:
     - label: "Read the Blog"
       url: "/posts/"
 excerpt: >
-  Weaving the impossible creations of the imagination into real-time experiences. <br />
-  **Architecting dynamic systems through Game Design and Simulation.**
+A Master of Systemic Sorcery -  I teach the art of weaving chaotic imagination into stable, real-time systems. Controlling the entropy of virtual worlds through the ancient ritual of Programming and Modular Design.
 feature_row:
   - image_path: /assets/images/portoflio/unity-hierarchyFolder-hierarchy.png #Portoflio Thumbnail
     alt: "Simple Unity Hierarchy Folder"
