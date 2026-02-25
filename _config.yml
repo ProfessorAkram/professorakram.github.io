@@ -1,31 +1,4 @@
 # -----------------------------------------------------------------------------
-# 🎨 Theme Settings
-# -----------------------------------------------------------------------------
-remote_theme: "mmistakes/minimal-mistakes"
-minimal_mistakes_skin: "dark" # You can choose: air, aqua, contrast, dark, dirt, neon, etc.
-
-# Features
-site_author: "Professor Akram"
-paginate: 5
-words_per_minute: 200
-
-# Defaults for Posts and Pages
-defaults:
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: single
-      author_profile: true
-  - scope:
-      path: ""
-      type: pages
-    values:
-      layout: single
-      author_profile: true
-
-
-# -----------------------------------------------------------------------------
 # ⚙️ Site Settings
 # -----------------------------------------------------------------------------
 
@@ -70,3 +43,44 @@ exclude:
   - vendor/ruby/
   - .jekyll-cache
   - .jekyll-metadata
+
+# -----------------------------------------------------------------------------
+# 🎨 Theme Settings
+# -----------------------------------------------------------------------------
+remote_theme: "mmistakes/minimal-mistakes"
+minimal_mistakes_skin: "dark" # You can choose: air, aqua, contrast, dark, dirt, neon, etc.
+
+# Features
+site_author: "Professor Akram"
+paginate: 5
+words_per_minute: 200
+
+# Defaults for Posts and Pages
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+
+
+# -----------------------------------------------------------------------------
+#  👤 Author Settings
+# -----------------------------------------------------------------------------author:
+  name   : "Akram Taghavi-Burris"
+  avatar : "/assets/images/2024-Akram.png"
+  bio    : "Program Director & Professor of CSG | Master of Systems Sorcery."
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/ProfessorAkram"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/akram-taghavi-burris/"
