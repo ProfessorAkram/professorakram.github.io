@@ -1,0 +1,8 @@
+---
+# THEME IMPORTS
+---
+
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
+@import "minimal-mistakes";
+
+// Delete everything below this line to go back to default
