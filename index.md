@@ -1,22 +1,26 @@
 ---
-layout: home
-title: Welcome to the Grimoire
+layout: splash
+permalink: /
+header:
+  overlay_color: "#000"
+  overlay_filter: "0.5"
+  overlay_image: /assets/images/professor-akram-logo.png # Main banner logo
+  actions:
+    - label: "Explore the Portfolio"
+      url: "/portfolio/"
+    - label: "Read the Blog"
+      url: "/posts/"
+excerpt: >
+  Weaving the impossible creations of the imagination into real-time experiences. <br />
+  **Architecting dynamic systems through Game Design and Simulation.**
+feature_row:
+  - image_path: /assets/images/portoflio/unity-hierarchyFolder-hierarchy.png #Portoflio Thumbnail
+    alt: "Simple Unity Hierarchy Folder"
+    title: "Simple Unity Hierarchy Folder"
+    excerpt: "Eliminate hierarchy clutter. This tool enables dedicated folder objects with custom icons and locked transforms to keep complex Unity scenes organized."
+    url: "https://github.com/ProfessorAkram/SimpleUnityHierarchyFolder"
+    btn_label: "View Repository"
+    btn_class: "btn--primary"
 ---
 
-# 🧙‍♂️ Professor Akram
-## Master of Systemic Sorcery
-
-"Weaving the impossible creations of the imagination into real-time experiences, controlling the entropy of virtual worlds through the ancient art of Programming and Modular Systems Design."
-
----
-
-### 📊 Character Stats
-* **Class:** Educator (Simulation & Gaming)
-* **Specialty:** Modular Architecture & Unity Systems
-* **Mana Source:** C# and Creative Chaos
-* **Current Quest:** Teaching a 16-week journey into Game System Development.
-
----
-
-### 📜 My Research & Teaching
-Welcome to my digital workshop. Here, I document the patterns and systems that make virtual worlds tick. Whether you are a student or a fellow developer, feel free to explore my scrolls.
+{% include feature_row %}
