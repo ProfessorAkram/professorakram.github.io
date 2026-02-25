@@ -1,0 +1,45 @@
+# -----------------------------------------------------------------------------
+# ⚙️ Site Settings
+# -----------------------------------------------------------------------------
+
+title: Professor Akram
+email: akram-burris@utulsa.edu
+description: >- 
+  A Master of Systemic Sorcery: Weaving the impossible creations of the 
+  imagination into real-time experiences, controlling the entropy of 
+  virtual worlds through the ancient art of Programming and Modular Systems Design.
+
+# Branding & Social
+twitter_username: ProfessorAkram 
+github_username:  ProfessorAkram
+
+# -----------------------------------------------------------------------------
+# 🛠️ Build Settings
+# -----------------------------------------------------------------------------
+
+# This must be empty for a username.github.io site
+baseurl: "" 
+url: "https://professorakram.github.io"
+
+# These tell GitHub how to process your files.
+markdown: kramdown
+theme: minima 
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# -----------------------------------------------------------------------------
+# 🚫 Exclusions
+# -----------------------------------------------------------------------------
+
+# These files exist on your computer but should not be part of the final website.
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - .jekyll-cache
+  - .jekyll-metadata
