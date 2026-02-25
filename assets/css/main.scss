@@ -56,6 +56,28 @@ h3 {
   }
 }
 
+/* --- Force Wide Content when Sidebar is False --- */
+
+.page {
+  @include breakpoint($large) {
+    /* If there is no sidebar, make the main content 100% wide */
+    width: 100% !important;
+    padding-right: 0 !important;
+  }
+}
+
+.archive, .inner {
+  max-width: 100% !important;
+}
+
+/* This specifically targets the "wide" class you set in your config */
+.wide {
+  max-width: 1280px; /* Or 'none' if you want it to hit the edges of the screen */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
 
 // --- AUTHOR STYLES ---
 
