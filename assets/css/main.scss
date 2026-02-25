@@ -1,11 +1,45 @@
 ---
-# Front matter required
+# Front matter is required for Jekyll to process this file
 ---
 
+// Import your specific Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Emilys+Candy&family=Laila:wght@400;700&family=Sofia&display=swap');
+
+// Import theme basics
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
 @import "minimal-mistakes";
 
-// --- BIO STYLING ---
+
+// --- GENERAL STYLES ---
+
+// Body Text: Laila
+body {
+  font-family: "Laila", serif;
+}
+
+// Headings: Emilys Candy
+h1, h2, h3, h4, h5, h6, .archive__item-title, .page__title {
+  font-family: "Emilys Candy", serif;
+  font-weight: 400; // This font usually only has one weight
+}
+
+
+// --- SIDEBAR STYLES  ---
+
+.sidebar {
+  padding-right: 2em;
+  padding-left: 1em;
+  
+  @include breakpoint($large) {
+    width: calc(300px);   // Standard is usually narrower; this gives you more room
+  }
+}
+
+
+// --- AUTHOR STYLES ---
+.author__profile {
+  padding: 20px;
+
 
 .author__bio {
   font-size: 1.1rem;      // Makes the text slightly larger
@@ -14,9 +48,8 @@
   display: block;         // Ensures it takes up its own space
 }
 
-// Optional: Make the sidebar wider overall so it doesn't squish
-.sidebar {
-  @include breakpoint($large) {
-    width: calc(300px);   // Standard is usually narrower; this gives you more room
-  }
+.author__name, .author__name a {
+  font-family: "Sofia", cursive;
+  font-size: 1.8rem; // Making it slightly larger to show off the script
+  line-height: 1;
 }
