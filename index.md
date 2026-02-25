@@ -4,7 +4,9 @@ permalink: /
 header:
   overlay_color: "#333"
   overlay_image: /assets/images/professor-akram-logo.png
-excerpt: "Master of Systemic Sorcery. Educator. Designer. Architect of Virtual Worlds."
+
+
+
 feature_row:
   - image_path: /assets/images/portfolio/unity-hierarchyFolder-hierarchy.png
     alt: "Simple Unity Hierarchy Folder"
@@ -14,5 +16,19 @@ feature_row:
     btn_label: "View System"
     btn_class: "btn--primary"
 ---
+
+
+# Welcome Wanderer
+
+Welcome to my little world, in which I invite you to: 
+- Learn moe about who is this **[Master of Systems Sorcery](/about/)**?
+- Step inside to browse through my **[Portfolio of Conjurings](/portfolio/)** - projects, experiments, and creations from my explorations in design, games, and digital media.
+- Peer into my **[Journal of Insights](/posts/)**, where I share reflections on pedagogy and the philosophy of play.
+
+---
+
+## Featured Conjuring
+*A glimpse at a recent artifact.*
+
 
 {% include feature_row %}
