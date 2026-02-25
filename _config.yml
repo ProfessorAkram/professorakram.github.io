@@ -65,7 +65,7 @@ defaults:
       type: portfolio # Adding defaults for your collection
     values:
       layout: single
-      author_profile: false
+      author_profile: true
       classes: wide
       
 include:
