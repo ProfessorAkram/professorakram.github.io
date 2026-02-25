@@ -1,175 +1,93 @@
 ---
-# Front matter is required for Jekyll to process this file
+# Front matter is required
 ---
 
-// 1. Import your specific Google Fonts
 @import url('https://fonts.googleapis.com/css2?family=Gorditas&family=Laila:wght@400;700&family=Sofia&display=swap');
-
-// 2. Import theme basics
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
 @import "minimal-mistakes";
 
-
-// --- THEME VARIABLES ---
+// --- 1. COLOR & FONT VARIABLES ---
 :root {
-  --mint-light: #9aeca4;
-  --mint-medium: #74b37b;
-  --mint-dark: #63996a;
-  --yellow-light: #fcf4c7;
-  --magic-yellow: #FDDD20;
+  --primary: #74b37b;    /* Mint Medium */
+  --secondary: #9aeca4;  /* Mint Light */
+  --accent: #FDDD20;     /* Yellow */
+  --heading-font: 'Gorditas', cursive;
+  --body-font: 'Laila', serif;
+  --fancy-font: 'Sofia', cursive;
   --text-gray: #454545;
-  --border-gray: #b2b2b2;
 }
 
-// --- GENERAL STYLES ---
-
+// --- 2. TYPOGRAPHY SYSTEM ---
 body {
-  font-family: "Laila", serif;
+  font-family: var(--body-font);
+  font-size: 16px; // 14px is quite small for Laila, 16px is better for readability
+  color: var(--text-gray);
 }
 
-h1, h2, h3, h4, h5, h6, .archive__item-title, .page__title {
-  font-family: 'Gorditas', cursive;
-  font-weight: 400; 
+h1, h2, h3, h4, .page__title, .archive__item-title {
+  font-family: var(--heading-font);
+  font-weight: 400;
 }
 
-// Ensure the body font remains grounded at a readable size
-body {
-  font-size: 14px; 
-  line-height: 1.6;
-}
-
-h1, .page__title {
-  font-size: 3rem !important; 
-  margin-top: 1.5em;
-  margin-bottom: 0.5em;
-}
-
-h2 {
-  font-size: 2.2rem !important; 
-  margin-top: 1.2em;
-}
-
-h3 {
-  font-size: 1.8rem !important;
-}
+h1, .page__title { font-size: 3rem !important; }
+h2 { font-size: 2.2rem !important; }
+h3 { font-size: 1.8rem !important; }
 
 
-// 1. Set the default dark background for all banners
-.page__hero--overlay {
-  background-color: #333 !important; 
-}
+// --- 3. THE SYSTEMIC LAYOUT (The "Magic" Logic) ---
 
-// 2. Hide the auto-generated text on banners globally
-// (This saves you from adding 'caption: ""' to every file)
-.page__hero-title, 
-.page__hero-excerpt {
-  display: none !important;
-}
-
-// 3. Ensure the content area stays wide and clean
-.archive, .inner {
+/* Global container cap */
+.inner, .archive {
   max-width: 1280px !important;
+  margin: 0 auto;
 }
 
-// --- SIDEBAR STYLES ---
-
-.sidebar {
-  padding-right: 2em;
-  padding-left: 1em;
-  
+/* CASE A: No Sidebar (Pages/Portfolio Grid) */
+.page.wide {
   @include breakpoint($large) {
-    width: 300px;
+    .page__inner-wrap { width: 100% !important; }
+    .page__content { 
+      width: 100% !important; 
+      max-width: 1100px; // Optimized for reading
+      margin: 0 auto; 
+    }
+    .sidebar { display: none; }
   }
 }
 
-/* --- Force Wide Content when Sidebar is False --- */
-
-.page {
+/* CASE B: With Sidebar (Posts/Individual Pieces) */
+.page:not(.wide) {
   @include breakpoint($large) {
-    /* If there is no sidebar, make the main content 100% wide */
-    width: 100% !important;
-    padding-right: 0 !important;
+    .page__inner-wrap { display: flex; justify-content: space-between; }
+    .page__content { width: calc(100% - 320px) !important; }
+    .sidebar { width: 280px !important; }
   }
 }
 
-.archive, .inner {
-  max-width: 100% !important;
-}
+// --- 5. COMPONENT STYLING ---
 
-/* This specifically targets the "wide" class you set in your config */
-.wide {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-
-
-// --- AUTHOR STYLES ---
-
-.author__profile {
-  padding: 20px;
-} // <--- This was the missing bracket!
-
-.author__bio {
-  font-size: 1.1rem;
-  line-height: 1.4;
-  margin-top: 10px;
-  display: block;
-}
-
-.author__name, .author__name a {
-  font-family: "Sofia", cursive;
+/* Author Profile */
+.author__name {
+  font-family: var(--fancy-font);
   font-size: 1.8rem;
-  line-height: 1;
+}
+.author__bio {
+  font-family: var(--body-font);
+  font-size: 0.9rem;
 }
 
-// --- WIDE LAYOUT FOR POSTS ---
-
-.layout--single .page {
-  @include breakpoint($large) {
-    max-width: 1280px; 
-    padding-right: 20px;
-  }
-}
-
-.layout--single .page__content {
-  width: 100% !important;
-  max-width: none !important;
-}
-
-
-.masthead {
-  background-color: var(--mint-light) !important;
-  background-image: radial-gradient(white 15%, transparent 16%), 
-                    radial-gradient(white 15%, transparent 16%) !important;
-  background-size: 60px 60px !important;
-  background-position: 0 0, 30px 30px !important;
-  border-bottom: 3px solid var(--mint-medium) !important;
-}
-
-.masthead__menu-item a {
-  color: var(--text-gray) !important;
-  font-family: 'Laila', serif;
-  font-weight: bold;
-}
-
+/* Magical Blockquotes */
 blockquote {
-  font-family: 'Sofia', cursive !important;
-  font-size: 1.4em;
+  font-family: var(--fancy-font) !important;
   background: var(--yellow-light);
-  border: 2px solid rgba(116, 179, 123, 0.2);
   border-radius: 15px;
   padding: 1.5rem 2rem;
-  position: relative;
   color: var(--mint-dark);
-
   &::before {
     content: "\201C";
-    font-family: Georgia, serif;
     font-size: 4em;
+    opacity: 0.2;
     position: absolute;
-    left: 10px;
-    top: -10px;
-    color: rgba(116, 179, 123, 0.2);
+    left: 10px; top: -10px;
   }
 }

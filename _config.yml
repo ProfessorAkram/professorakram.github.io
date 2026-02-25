@@ -48,12 +48,6 @@ masthead_title: "Professor Akram"
 defaults:
   - scope:
       path: ""
-      type: posts
-    values:
-      layout: single
-      author_profile: true
-  - scope:
-      path: ""
       type: pages
     values:
       layout: single
@@ -61,11 +55,16 @@ defaults:
       classes: wide
   - scope:
       path: ""
-      type: portfolio # Adding defaults for your collection
+      type: posts
     values:
       layout: single
-      author_profile: true
-      classes: wide
+      author_profile: true # Sidebars stay for the journal
+  - scope:
+      path: ""
+      type: portfolio
+    values:
+      layout: single
+      author_profile: true # Sidebars stay for the artifacts      
       
 include:
   - _pages
