@@ -87,7 +87,7 @@ collections:
 author:
   name   : "Akram Taghavi-Burris"
   avatar : "/assets/images/2024-Akram.png"
-  bio    : "Program Director & Professor of CSG | Master of Systems Sorcery."
+  bio    : "<strong>Program Director & Professor of CSG</strong> <br> <em>Master of Systems Sorcery</em>"
   links:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"

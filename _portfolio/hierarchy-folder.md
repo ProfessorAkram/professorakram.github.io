@@ -4,9 +4,9 @@ layout: single
 excerpt: "A utility for cleaning up Unity scene hierarchies using custom folder icons."
 date: 2025-10-20
 header:
-  overlay_image: /assets/images/portfolio/unity-hierarchyFolder-hierarchy.png
+  overlay_image: "/assets/images/portfolio/unity-hierarchyFolder-hierarchy.png"
+  teaser: "/assets/images/portfolio/unity-hierarchyFolder-hierarchy.png"
   overlay_filter: 0.5
-  teaser: /assets/images/portfolio/unity-hierarchyFolder-hierarchy.png 
 sidebar:
   - title: "Role"
     text: "Lead Developer"
