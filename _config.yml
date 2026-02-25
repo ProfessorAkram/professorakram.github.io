@@ -1,4 +1,31 @@
 # -----------------------------------------------------------------------------
+# 🎨 Theme Settings
+# -----------------------------------------------------------------------------
+remote_theme: "mmistakes/minimal-mistakes"
+minimal_mistakes_skin: "dark" # You can choose: air, aqua, contrast, dark, dirt, neon, etc.
+
+# Features
+site_author: "Professor Akram"
+paginate: 5
+words_per_minute: 200
+
+# Defaults for Posts and Pages
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+
+
+# -----------------------------------------------------------------------------
 # ⚙️ Site Settings
 # -----------------------------------------------------------------------------
 
