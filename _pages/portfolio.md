@@ -5,7 +5,6 @@ permalink: /portfolio/
 collection: portfolio
 entries_layout: grid
 header:
-  overlay_color: "#000"
   overlay_filter: "0.6"
   overlay_image: /assets/images/portfolio-header.jpg
 author_profile: false

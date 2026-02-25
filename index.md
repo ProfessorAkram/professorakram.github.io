@@ -2,7 +2,6 @@
 layout: splash
 permalink: /
 header:
-  overlay_color: "#333"
   overlay_image: /assets/images/professor-akram-logo.png
   caption: "" # Moves inside header to suppress text
   actions:    # Moves inside header to suppress buttons/titles
