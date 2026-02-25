@@ -1,0 +1,22 @@
+---
+# Front matter required
+---
+
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
+@import "minimal-mistakes";
+
+// --- BIO STYLING ---
+
+.author__bio {
+  font-size: 1.1rem;      // Makes the text slightly larger
+  line-height: 1.4;       // Adds space between the two lines
+  margin-top: 10px;       // Adds space below your name
+  display: block;         // Ensures it takes up its own space
+}
+
+// Optional: Make the sidebar wider overall so it doesn't squish
+.sidebar {
+  @include breakpoint($large) {
+    width: calc(300px);   // Standard is usually narrower; this gives you more room
+  }
+}

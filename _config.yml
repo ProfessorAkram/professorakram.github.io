@@ -34,7 +34,7 @@ plugins:
 # 🎨 Theme Settings
 # -----------------------------------------------------------------------------
 
-minimal_mistakes_skin: "dark"
+minimal_mistakes_skin: "default" # You can choose: aqua, air, contrast, dirt, dark, midnight, mint, neon, sunrise
 site_author: "Professor Akram"
 paginate: 5
 words_per_minute: 200
@@ -65,14 +65,20 @@ defaults:
 author:
   name   : "Akram Taghavi-Burris"
   avatar : "/assets/images/2024-Akram.png"
-  bio    : "Program Director & Professor of CSG | Master of Systems Sorcery."
+  bio    : "Program Director & Professor of CSG <br> **Master of Systems Sorcery**"
   links:
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/ProfessorAkram"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/akram-taghavi-burris/"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/ProfessorAkram"  
+    - label: "Itch.io"
+      icon: "fab fa-fw fa-itch-io"
+      url: "https://professorakram.itch.io"
+    - label: "ArtStation"
+      icon: "fab fa-fw fa-artstation"
+      url: "https://www.artstation.com/your-profile"
 
 # -----------------------------------------------------------------------------
 # 🚫 Exclusions
