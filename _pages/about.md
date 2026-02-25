@@ -6,7 +6,7 @@ author_profile: true
 header:
   overlay_color: "#000"
   overlay_filter: "0.5"
-  overlay_image: /assets/images/header-banner.jpg # Optional: Add a cool system/tech banner
+  overlay_image: 
 ---
 
 Hi, I’m **Akram Taghavi-Burris**, an award-winning designer, writer, and educator—and a self-described **Master of Systems Sorcery**—dedicated to inspiring others to *Get Creative Today*. 
