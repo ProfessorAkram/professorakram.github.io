@@ -5,10 +5,12 @@ permalink: /portfolio/
 collection: portfolio
 entries_layout: grid
 classes: wide
+sort_by: date
+sort_order: reverse
 header:
   overlay_color: "#000"
   overlay_filter: "0.6"
-  overlay_image: /assets/images/portfolio-header.jpg
+  overlay_image: /assets/images/portfolio/portfolio-header.jpg
 ---
 
 # Welcome to My Spellbook of Conjurings
