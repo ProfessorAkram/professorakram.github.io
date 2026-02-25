@@ -2,54 +2,67 @@
 # Front matter is required for Jekyll to process this file
 ---
 
-// Import your specific Google Fonts
+// 1. Import your specific Google Fonts
 @import url('https://fonts.googleapis.com/css2?family=Emilys+Candy&family=Laila:wght@400;700&family=Sofia&display=swap');
 
-// Import theme basics
+// 2. Import theme basics
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
 @import "minimal-mistakes";
 
 
 // --- GENERAL STYLES ---
 
-// Body Text: Laila
 body {
   font-family: "Laila", serif;
 }
 
-// Headings: Emilys Candy
 h1, h2, h3, h4, h5, h6, .archive__item-title, .page__title {
   font-family: "Emilys Candy", serif;
-  font-weight: 400; // This font usually only has one weight
+  font-weight: 400; 
 }
 
 
-// --- SIDEBAR STYLES  ---
+// --- SIDEBAR STYLES ---
 
 .sidebar {
   padding-right: 2em;
   padding-left: 1em;
   
   @include breakpoint($large) {
-    width: calc(300px);   // Standard is usually narrower; this gives you more room
+    width: 300px;
   }
 }
 
 
 // --- AUTHOR STYLES ---
+
 .author__profile {
   padding: 20px;
-
+} // <--- This was the missing bracket!
 
 .author__bio {
-  font-size: 1.1rem;      // Makes the text slightly larger
-  line-height: 1.4;       // Adds space between the two lines
-  margin-top: 10px;       // Adds space below your name
-  display: block;         // Ensures it takes up its own space
+  font-size: 1.1rem;
+  line-height: 1.4;
+  margin-top: 10px;
+  display: block;
 }
 
 .author__name, .author__name a {
   font-family: "Sofia", cursive;
-  font-size: 1.8rem; // Making it slightly larger to show off the script
+  font-size: 1.8rem;
   line-height: 1;
+}
+
+// --- WIDE LAYOUT FOR POSTS ---
+
+.layout--single .page {
+  @include breakpoint($large) {
+    max-width: 1280px; 
+    padding-right: 20px;
+  }
+}
+
+.layout--single .page__content {
+  width: 100% !important;
+  max-width: none !important;
 }
