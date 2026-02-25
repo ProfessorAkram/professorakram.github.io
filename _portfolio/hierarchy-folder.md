@@ -11,9 +11,9 @@ tags:
   - Tools
   - Workflow
 header:
-  teaser: /assets/images/portfolio/unity-hierarchyFolder-hierarchy.png
-  overlay_image: /assets/images/portfolio/unity-hierarchyFolder-hierarchy.png
-  overlay_filter: 0.5
+overlay_image: /assets/images/portfolio/unity-hierarchyFolder-hierarchy.png
+overlay_filter: 0.5 # This makes the text readable over the image
+teaser: /assets/images/portfolio/unity-hierarchyFolder-hierarchy.png
 
 sidebar:
   - title: "Role"

@@ -21,6 +21,29 @@ h1, h2, h3, h4, h5, h6, .archive__item-title, .page__title {
   font-weight: 400; 
 }
 
+// Ensure the body font remains grounded at a readable size
+body {
+  font-size: 1.1rem; 
+  line-height: 1.6;
+}
+
+h1, .page__title {
+  font-size: 3rem !important; 
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+h2 {
+  font-size: 2.2rem !important; 
+  margin-top: 1.2em;
+}
+
+h3 {
+  font-size: 1.8rem !important;
+}
+
+
+
 
 // --- SIDEBAR STYLES ---
 
