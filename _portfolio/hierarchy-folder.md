@@ -1,18 +1,20 @@
 ---
 title: "Simple Unity Hierarchy Folder"
-layout: single
+
 excerpt: "A utility for cleaning up Unity scene hierarchies using custom folder icons."
 date: 2025-10-20
+
 header:
   overlay_image: "/assets/images/portfolio/unity-hierarchyFolder-hierarchy.png"
   teaser: "/assets/images/portfolio/unity-hierarchyFolder-hierarchy.png"
   overlay_filter: 0.5
-sidebar:
-  - title: "Role"
-    text: "Lead Developer"
-  - title: "Tech"
-    text: "Unity, C#"
+
+project_brief: "A organization tool for complex Unity projects."
+project_role: "Lead Systems Developer"
+project_tools: "C#, Unity, Odin"
+project_date: "Nov 2025"
 ---
+
 
 ## Summary
 **SimpleUnityHierarchyFolder** enables the creation of dedicated folder objects in the Unity hierarchy for cleaner, more organized scenes. Hierarchy folders are empty GameObjects with transform access removed and represented with a folder icon, making it easy to visually structure large hierarchies. This system helps developers quickly understand scene organization at a glance and maintain a clean, navigable hierarchy.

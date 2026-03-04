@@ -1,5 +1,5 @@
 ---
-layout: home # 🪄 This layout auto-generates the post list
+layout: blog # 🪄 This layout auto-generates the post list
 title: "The Sorcerer's Journal"
 permalink: /posts/
 author_profile: true

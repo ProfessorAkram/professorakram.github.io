@@ -5,3 +5,6 @@ main:
     url: /portfolio/
   - title: "Blog"
     url: /posts/
+    
+portfolio_sidebar:
+  - title: "Project Details"

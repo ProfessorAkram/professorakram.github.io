@@ -2,9 +2,7 @@
 layout: single
 title: "About the Master of Systems Sorcery"
 permalink: /about/
-header:
-  overlay_filter: "0.5"
-  overlay_image: 
+author_profile: true
 ---
 
 Hi, I’m **Akram Taghavi-Burris**, an award-winning designer, writer, and educator—and a self-described **Master of Systems Sorcery**—dedicated to inspiring others to *Get Creative Today*. 

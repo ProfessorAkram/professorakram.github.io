@@ -1,9 +1,6 @@
 ---
 layout: splash
 permalink: /
-header:
-  overlay_image: /assets/images/professor-akram-logo.png
-
 
 feature_row:
   - image_path: /assets/images/portfolio/unity-hierarchyFolder-hierarchy.png
@@ -16,7 +13,7 @@ feature_row:
 ---
 
 
-# Welcome Wanderer
+# Welcome, Wanderer
 
 Welcome to my little world, in which I invite you to: 
 - Learn moe about who is this **[Master of Systems Sorcery](/about/)**?

@@ -1,14 +1,11 @@
 ---
 layout: collection
+classes: wide
 title: "The Repository of Creations"
 permalink: /portfolio/
 collection: portfolio
 entries_layout: grid
-header:
-  overlay_filter: "0.6"
-  overlay_image: /assets/images/portfolio-header.jpg
-author_profile: false
-classes: wide
+author_profile: true
 ---
 
 # Welcome to My Spellbook of Conjurings

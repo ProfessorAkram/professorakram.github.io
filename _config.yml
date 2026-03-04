@@ -41,7 +41,7 @@ paginate: 5
 words_per_minute: 200
 
 # Masthead (Top Navigation) Settings
-logo: "/assets/images/professor-akram-logo.png"
+logo: 
 masthead_title: "Professor Akram"
 
 # Defaults for Posts and Pages
@@ -52,29 +52,41 @@ defaults:
     values:
       layout: single
       header:
-        overlay_color: "#333"
-        overlay_image: "/assets/images/professor-akram-logo.png"
-      author_profile: false # No sidebar on pages
-      classes: wide
+        overlay_color: "#003595"
+        overlay_image:    
+      author_profile: true # Author profile (left sidebar) is visible
+      toc: true             # Table of Contents (right sidebar) is visible
+      toc_label: "Contents" # Optional: Custom title for the TOC
+      toc_icon: "book"      # Optional: FontAwesome icon
+      toc_sticky: true      # This makes it stick to the sidebar
+  
   - scope:
       path: ""
       type: posts
     values:
       layout: single
       header:
-        overlay_color: "#333"
-        overlay_image: "/assets/images/professor-akram-logo.png"
-      author_profile: true # Sidebars stay for the journal
+        overlay_color: "#003595"
+        overlay_image: 
+      author_profile: true # Author profile (left sidebar) is visible
+      toc: true             # Table of Contents (right sidebar) is visible
+      toc_label: "Contents" # Optional: Custom title for the TOC
+      toc_icon: "book"      # Optional: FontAwesome icon
+      toc_sticky: true      # This makes it stick to the sidebar
+ 
   - scope:
       path: ""
-      type: portfolio
+      type: portfolio # Matches the collection name above
     values:
-      layout: single
+      layout: portfolio-item
       header:
-        overlay_color: "#333"
-        overlay_image: "/assets/images/professor-akram-logo.png"
-      author_profile: true # Sidebars stay for the artifacts      
-      
+        overlay_color: "#003595"
+        overlay_image:
+      author_profile: true # Author profile (left sidebar) is visible
+      sidebar: 
+        nav: "portfolio_sidebar"  # Custom Portfolio (left sidebar) is visible
+      toc: true # Table of Contents (right sidebar) is visible
+
 include:
   - _pages
       
