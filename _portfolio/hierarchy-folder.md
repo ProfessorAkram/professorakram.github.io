@@ -41,6 +41,10 @@ I developed this Unity package from scratch for educational purposes. This inclu
 * None; developed entirely in-house.  
 * **License:** MIT License
 
+|heading 1| heading 2| heading 3|
+|---------|----------|----------|
+|something| another thing| something else|
+
 ---
 
 ### Resources
