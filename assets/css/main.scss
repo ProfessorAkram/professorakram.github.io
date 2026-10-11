@@ -1,151 +1,320 @@
+
 ---
-# THEME IMPORTS
 ---
+
+/* -----------------------------------------------------------------------------
+   THEME IMPORTS
+   ----------------------------------------------------------------------------- */
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
 @import "minimal-mistakes";
 
 
+/* -----------------------------------------------------------------------------
+   PROFESSOR AKRAM — BRAND COLORS
+   ----------------------------------------------------------------------------- */
 
+:root {
+  --akram-green: #7b9a52;
+  --akram-pink: #f78da7;
 
-/* ----------------------------------------------------------------------------- */
-/* ⏺️ Button  Styles                                                           */
-/* ----------------------------------------------------------------------------- */
+  --akram-green-dark: #536b34;
+  --akram-pink-dark: #963d56;
 
-.btn--primary{
-  background-color: #003595;
+  --akram-charcoal: #252525;
+  --akram-background: #faf9f6;
+  --akram-white: #ffffff;
+  --akram-border: #e5e5e0;
+  --akram-muted: #62665d;
 }
-.btn--primary:hover{
-  background-color: #d0b787;
+
+
+/* -----------------------------------------------------------------------------
+   GENERAL STYLING
+   ----------------------------------------------------------------------------- */
+
+body {
+  color: var(--akram-charcoal);
+}
+
+.page__content {
+  line-height: 1.75;
+}
+
+.page__title,
+.archive__item-title {
+  letter-spacing: -0.02em;
+}
+
+hr {
+  border-top-color: var(--akram-border);
+}
+
+
+/* -----------------------------------------------------------------------------
+   LINKS
+   ----------------------------------------------------------------------------- */
+
+a {
+  color: var(--akram-green-dark);
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--akram-pink-dark);
+}
+
+a:focus-visible {
+  outline: 2px solid var(--akram-green-dark);
+  outline-offset: 3px;
+}
+
+
+/* -----------------------------------------------------------------------------
+   NAVIGATION
+   ----------------------------------------------------------------------------- */
+
+/* Accent line beneath navigation links */
+
+.greedy-nav .visible-links a:before {
+  background: var(--akram-pink);
+}
+
+/* Keep the site title readable */
+
+.masthead__menu-item a {
+  color: var(--akram-charcoal);
+}
+
+.masthead__menu-item a:hover {
+  color: var(--akram-green-dark);
+}
+
+
+/* -----------------------------------------------------------------------------
+   BUTTONS
+   ----------------------------------------------------------------------------- */
+
+.btn--primary {
+  background-color: var(--akram-green);
+  border-color: var(--akram-green);
+  color: var(--akram-white);
 }
 
 .btn--primary:visited {
-  background-color: #0a2240;
+  color: var(--akram-white);
 }
 
-/* ----------------------------------------------------------------------------- */
-/* 🦶 Page Footer Styles                                                        */
-/* ----------------------------------------------------------------------------- */
-
-.page__footer{
-  background: #0a2240;
-  color: #fff;
-  margin-top: 1em;
-}
-.page__footer footer {
-  margin-top: 1em;
+.btn--primary:hover {
+  background-color: var(--akram-green-dark);
+  border-color: var(--akram-green-dark);
+  color: var(--akram-white);
 }
 
-.page__footer-container {
-  display: flex;
-  justify-content: space-between; /* Pushes one left, one right */
-  align-items: center;           /* Vertically centers them */
-  flex-wrap: wrap;               /* Ensures it looks good on mobile */
+/* Secondary buttons */
 
+.btn:not(.btn--primary) {
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    color 0.2s ease;
 }
 
-.page__footer-left {
-  flex: 1;
-}
 
-.page__footer-right {
-  margin-left: 20px;
-}
-
-.footer-logo {
-  height: auto; /* Adjust size as needed */
-  width: auto;
-}
-
-/* Mobile fix: stack them if the screen is too small */
-@media (max-width: 600px) {
-  .page__footer-container {
-    flex-direction: column;
-    text-align: center;
-  }
-  .page__footer-right {
-    margin-left: 0;
-  }
-}
-
-/* ----------------------------------------------------------------------------- */
-/* 📘 Table of Contents Styles                                                   */
-/* ----------------------------------------------------------------------------- */
+/* -----------------------------------------------------------------------------
+   TABLE OF CONTENTS
+   ----------------------------------------------------------------------------- */
 
 .toc .nav__title {
-  background:#0a2240 ;
+  background-color: var(--akram-green-dark);
+  color: var(--akram-white);
+}
+
+.toc .active a {
+  color: var(--akram-green-dark);
 }
 
 
-/* ----------------------------------------------------------------------------- */
-/* 💼 Portfolio Styles                                                           */
-/* ----------------------------------------------------------------------------- */
+/* -----------------------------------------------------------------------------
+   PORTFOLIO
+   ----------------------------------------------------------------------------- */
 
-.portfolio-meta{
-  border: 1px solid #f2f3f3;
-  border-radius: 4px;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.125);
-  margin-top: 50px;
-  margin-right: 10px;
+.portfolio-meta {
+  margin-top: 2rem;
+  margin-right: 0.5rem;
+  border: 1px solid var(--akram-border);
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
 }
 
-.portfolio-meta h3{
+.portfolio-meta h3 {
   margin: 0;
-  padding: 5px;
-  border-start-start-radius: 4px;
-  border-start-end-radius: 4px;
-  background: #d0b787;
-  color: #0a2240;
+  padding: 0.75rem;
+  background-color: var(--akram-green);
+  color: var(--akram-charcoal);
 }
 
-.portfolio-details{
-  padding: 5px;
-  border: solid 1px #f2f3f3;
+.portfolio-details {
+  padding: 0.75rem;
+  border: 1px solid var(--akram-border);
 }
 
-.portfolio-details p{
-  margin: 0.5em auto 0.5em;
+.portfolio-details p {
+  margin: 0.5rem 0;
 }
 
 
-/* ----------------------------------------------------------------------------- */
-/* 📝 Post Styles                                                                */
-/* ----------------------------------------------------------------------------- */
+/* -----------------------------------------------------------------------------
+   POST LISTINGS
+   ----------------------------------------------------------------------------- */
 
+/* Container for each post */
 
-/* Container for the whole post item */
 .post__item {
   display: flex;
-  align-items: center; /* This handles the vertical centering */
+  align-items: center;
+  gap: 1.25rem;
   clear: both;
-  margin-bottom: 2em;
+  margin-bottom: 2rem;
 }
 
-/* The Thumbnail Container */
+/* Thumbnail */
+
 .post__item-teaser {
-  flex: 0 0 150px;    /* Fixed width: 150px, won't grow or shrink */
-  margin-right: 20px;
+  flex: 0 0 150px;
+  min-width: 0;
 }
 
 .post__item-teaser img {
-  width: 100%;        /* Ensures image fills the 150px container */
   display: block;
-  border-radius: 4px;
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
 }
 
-/* The Text Content (Title + Excerpt) */
+/* Text content */
+
 .post__item-body {
-  flex: 1;            /* Takes up the remaining horizontal space */
+  flex: 1;
+  min-width: 0;
 }
 
-/* Clean up default margins so centering looks perfect */
 .post__item-title {
   margin-top: 0 !important;
   margin-bottom: 0.25em;
 }
 
+.post__item-title a {
+  color: var(--akram-charcoal);
+}
+
+.post__item-title a:hover {
+  color: var(--akram-green-dark);
+}
+
 .post__item-excerpt {
   margin-top: 0;
   margin-bottom: 0;
+  color: var(--akram-muted);
 }
 
+
+/* -----------------------------------------------------------------------------
+   FOOTER
+   ----------------------------------------------------------------------------- */
+
+.page__footer {
+  margin-top: 2rem;
+  background-color: var(--akram-charcoal);
+  color: var(--akram-white);
+}
+
+.page__footer footer {
+  margin-top: 1rem;
+}
+
+/* Custom footer layout */
+
+.page__footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.page__footer-left {
+  flex: 1;
+  min-width: 0;
+}
+
+.page__footer-right {
+  margin-left: 1.25rem;
+}
+
+.page__footer a {
+  color: var(--akram-pink);
+}
+
+.page__footer a:hover {
+  color: var(--akram-green);
+}
+
+.footer-logo {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+}
+
+
+/* -----------------------------------------------------------------------------
+   RESPONSIVE STYLING
+   ----------------------------------------------------------------------------- */
+
+@media (max-width: 600px) {
+
+  /* Post listings */
+
+  .post__item {
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+
+  .post__item-teaser {
+    flex: 0 0 100px;
+  }
+
+  /* Footer */
+
+  .page__footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .page__footer-left {
+    width: 100%;
+  }
+
+  .page__footer-right {
+    margin-left: 0;
+  }
+
+}
+
+
+/* -----------------------------------------------------------------------------
+   REDUCED MOTION
+   ----------------------------------------------------------------------------- */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}
